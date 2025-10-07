@@ -1,0 +1,107 @@
+:root {
+  --bg-dark: #031634;
+  --bg-light: #053061;
+  --accent: #38bdf8;
+  --text: #dcecff;
+  --muted: #8ab9e2;
+  --card: #072a52;
+  --shadow: 0 10px 25px rgba(0,0,50,0.6);
+  --radius: 18px;
+  font-family: 'Comic Relief', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: linear-gradient(180deg, var(--bg-dark), var(--bg-light));
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 16px;
+}
+
+.site-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.site-header h1 {
+  font-size: 2.4rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(56,189,248,0.4);
+}
+.lead {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.art-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(56,189,248,0.3);
+}
+
+.art-item img {
+  width: 50%;
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(56,189,248,0.2);
+}
+
+.art-item .info {
+  width: 50%;
+  text-align: left;
+}
+.art-item .info h2 {
+  color: var(--accent);
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+.art-item .info p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.art-item.reverse {
+  flex-direction: row-reverse;
+}
+
+footer {
+  margin-top: 80px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .art-item, .art-item.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+  .art-item img, .art-item .info {
+    width: 100%;
+  }
+  .art-item .info { padding: 20px; }
+}
