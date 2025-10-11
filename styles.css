@@ -1,6 +1,6 @@
 :root {
   --bg-dark: #031634;
-  --bg-light: #053061;
+  --bg-light: #0c3e78;
   --accent: #38bdf8;
   --text: #dcecff;
   --muted: #8ab9e2;
@@ -105,16 +105,6 @@ footer {
   text-align: center;
 }
 
-.line {
-  width: 80%;                    
-  max-width: 1110px;               
-  height: 2px;
-  margin: 20px auto;               
-  background: linear-gradient(90deg, #9B9B9B, #9B9B9B);
-  border-radius: 2px;
-  position: relative;
-}
-
 .line::before {
   content: "";
   position: absolute;
@@ -131,22 +121,9 @@ footer {
   z-index: -1;
 }
 
-@media (max-width: 900px) {
-  .art-item, .art-item.reverse {
-    flex-direction: column;
-    text-align: center;
-  }
-  .art-item img, .art-item .info {
-    width: 100%;
-  }
-  .art-item .info { padding: 20px; }
-}
-
-
-
 .site-footer {
   padding: 30px 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Comic Relief', sans-serif;
 }
 .footer-inner {
   display: flex;
@@ -154,20 +131,20 @@ footer {
   margin-bottom: 20px;
 }
 .footer-right a {
-  color: #d8deff;
+  color: #b9bfff;
 }
 .copyright {
   text-align: center;
   font-size: 13px;
-  color: rgba(255,255,255,0.5);
+  color: var(--muted);
 }
 
 .line {
   width: 80%;                    
   max-width: 1110px;               
   height: 2px;
-  margin: 20px auto;               
-  background: linear-gradient(90deg, #5f6480, #5f6480);
+  margin: 20px auto;
+  background: linear-gradient(100deg, #464a7b, rgb(139, 134, 211));
   border-radius: 2px;
   position: relative;
 }
@@ -180,8 +157,8 @@ footer {
   height: 8px;
   background: linear-gradient(
     90deg,
-    rgba(47,184,255,0.18),
-    rgba(24,106,161,0.18)
+    rgba(0, 115, 255, 0.18),
+    rgba(0, 153, 255, 0.18)
   );
   border-radius: 6px;
   filter: blur(6px);
@@ -196,25 +173,5 @@ footer {
 }
 
 .footer-logo img {
-  height: 30px; 
-}
-
-.class-1 {
-  box-shadow: -1px 20px 0px -7px #8767e0, -2px 39px 0px -14px #7055bd;
-}
-
-.class-2 {
-  box-shadow: -1px 20px 0px -7px #b933e6, -2px 39px 0px -14px #a02ac8;
-}
-
-.class-3 {
-  box-shadow: -1px 20px 0px -7px #df854c, -2px 39px 0px -14px #c76a3e;
-}
-
-@media (max-width: 900px) {
-  .hero-inner { flex-direction: column; text-align: center; }
-  .benefits-grid { flex-direction: column; }
-  .reviews-row { flex-direction: column; }
-  .footer-inner { flex-direction: column; text-align: center; }
-  .main-nav a { display: none; }
+  height: 90px; 
 }
