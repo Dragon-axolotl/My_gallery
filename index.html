@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>My gallery</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="./img/cat.jpg">
+  <link rel="icon" type="image/jpg" href="./img/cat.jpg">
   <link rel="stylesheet" href="./styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -113,26 +113,34 @@
       </div>
     </section>
 
-    <footer>
-      <footer class="site-footer">
+    <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-left">
         <p>
           Have a idea? ------------------------<br>
-          Have a question? ------------------<br>
-        </p>
+          Have a question? ------------------</p>
       </div>
       <div class="footer-right">
-        <a href="mailto:krul.kira@gmail.com">krul.kira@gmail.com</a><br>
-        <a href="mailto:krul.kira@gmail.com">krul.kira@gmail.com</a>
+        <a href="mailto:ColorRawe_support@gmail.com">krul.kira@gmail.com</a><br>
+        <a href="mailto:ColorRawe_support@gmail.com">krul.kira@gmail.com</a>
+
       </div>
     </div>
-      <div class="line"></div>
-      <p>© <span id="year"></span> My gallery — my style 💙</p>
-    </footer>
-  </main>
 
-  <script>
+    <div class="line"></div>
+
+    <div class="container footer-bottom">
+      <div class="copyright">
+        <p>© <span id="year"></span> My gallery — my style 💙<br>Ukraine</p>
+      </div>
+      <div class="footer-logo">
+        <img src="./img/cat.jpg" alt="C&R logo">
+        <div>@misssXD</div>
+      </div>
+    </div>
+  </footer>
+</main>
+<script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
