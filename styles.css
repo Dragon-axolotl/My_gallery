@@ -293,7 +293,7 @@ footer {
 .input-wrapper input,
 .input-wrapper textarea {
   width: 100%;
-  padding: 10px 10px 10px 36px; /* відступ під іконку */
+  padding: 10px 10px 10px 36px; 
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 14px;
@@ -306,7 +306,7 @@ footer {
   height: 80px;
 }
 
-/* hover/focus ефект */
+
 .input-wrapper input:focus,
 .input-wrapper textarea:focus {
   border-color: black;
@@ -321,10 +321,10 @@ footer {
 .checkbox {
   display: flex;
   align-items: center;
-  gap: 8px; /* відстань між чекбоксом і текстом */
+  gap: 8px; 
   font-size: 14px;
   color: #757575;
-  margin-bottom: 20px; /* трохи відступу перед кнопкою */
+  margin-bottom: 20px; 
 }
 
 .checkbox input[type="checkbox"] {
@@ -343,3 +343,101 @@ footer {
   text-decoration: underline;
 }
 
+.site-footer {
+  color: #fff;
+  padding: 30px 10px;
+  text-align: center;
+  font-family: 'Comic Relief', cursive;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-item p {
+  margin: 0;
+}
+
+.footer-item a {
+  color: #8dd0ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}
+
+
+.footer-social img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 8px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+
+.footer-bottom {
+  border-top: 1px solid #b9d2f1;
+  padding-top: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer-social a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5ad1ff, #8f65ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(138, 100, 255, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-social a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(90, 209, 255, 1), 0 0 25px rgba(138, 100, 255, 0.9);
+}
+
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(1.1);
+}
