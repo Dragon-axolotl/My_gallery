@@ -394,7 +394,7 @@ footer {
 }
 
 .footer-logo img {
-  width: 60px;
+  width: 70px;
   height: 60px;
   border-radius: 10px;
   margin-bottom: 5px;
@@ -407,8 +407,6 @@ footer {
   font-size: 14px;
   opacity: 0.9;
 }
-
-
 
 .footer-social {
   display: flex;
